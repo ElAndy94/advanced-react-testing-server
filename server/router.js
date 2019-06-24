@@ -4,6 +4,6 @@ const passport = require('passport');
 
 const requireAuth = passport.authenticate('jwt', { session: false });
 
-module.exports = function(app) {
+module.exports = app => {
   app.post('/signup', Authentication.signup);
 };
