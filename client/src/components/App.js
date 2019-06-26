@@ -1,5 +1,12 @@
 import React from 'react';
 
+import Header from './Header';
+
 export default () => {
-  return <div>Hi, I am the app</div>;
+  return (
+    <React.Fragment>
+      <Header />
+      Hi, I am the app
+    </React.Fragment>
+  );
 };
