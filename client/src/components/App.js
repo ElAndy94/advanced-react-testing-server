@@ -2,11 +2,11 @@ import React from 'react';
 
 import Header from './Header';
 
-export default () => {
+export default ({ children }) => {
   return (
     <React.Fragment>
       <Header />
-      Hi, I am the app
+      {children}
     </React.Fragment>
   );
 };
