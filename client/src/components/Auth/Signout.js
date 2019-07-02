@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-function Signout() {
+function Signout(props) {
   useEffect(() => {
     props.signout();
   }, []);
